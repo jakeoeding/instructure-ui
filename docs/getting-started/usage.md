@@ -6,8 +6,7 @@ order: 1
 
 ## Quick Start
 
-The following steps will create a starter app configured with Instructure-UI
-presets that is immediately ready for development. Recommended if you are starting from scratch.
+The following steps will create a React app that uses Instructure-UI. Recommended if you are starting from scratch.
 
 1. Create a new react app, e.g. with [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html):
 
@@ -17,7 +16,7 @@ npx create-react-app my-cool-app
 
 This will generate a vanilla React app with tests, sample code and scripts. You can try it by running `yarn start`.
 
-2. Add InstUI dependencies. Add all the instUI dependencies to `package.json` you need. We recommend that you add the `@instructure/ui` meta-package, this contains all of our UI components (substitute the version number with the latest one):
+2. Add InstUI dependencies to your `package.json`. We recommend that you add the `@instructure/ui` meta-package, this contains all of our UI components (substitute the version number with the latest one):
 
 ```json
 {
@@ -39,7 +38,7 @@ import { Button, EmotionThemeProvider, canvas } from '@instructure/ui'
 function App() {
   return (
     <EmotionThemeProvider theme={canvas}>
-      <Button>Hello InstUI</Button>
+      <Button>Hello from InstUI!</Button>
     </EmotionThemeProvider>
   )
 }
@@ -58,7 +57,7 @@ Congrats, you have now a (very) basic app that uses Instructure-UI :)
 
 ## Integrating With an Existing Project
 
-Just add the `@instructure/ui` dependency as shown above and wrap the part of your app that will use InstUI and start using InstUI components.
+Just add the `@instructure/ui` dependency as shown above and wrap the part of your app that will use InstUI in `<EmotionThemeProvider>` and start using InstUI components.
 
 ## Further reading
 

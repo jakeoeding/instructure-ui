@@ -41,7 +41,7 @@ You can find the legacy v7 documentation on [legacy.instructure.design](https://
 
 One of the changes of v8.0. is that we deleted all components and properties marked as `deprecated` in v7. Since these are not backwards compatible anymore, please make sure to update everything.
 
-**We made a list of all the affected components and props on [Deprecated Properties and Components in Version 7.0](https://legacy.instructure.design/#v7-deprecated-props-and-components) page to have a clear overview of the changes, removals, substitutes.** You can also find these changes in our [CHANGELOG](#CHANGELOG).
+**We made a list of all the affected components and props on [Deprecated Properties and Components in Version 7.0](https://instructure.design/v7/#v7-deprecated-props-and-components) page to have a clear overview of the changes, removals, substitutes.** You can also find these changes in our [CHANGELOG](#CHANGELOG).
 
 ## Main changes
 

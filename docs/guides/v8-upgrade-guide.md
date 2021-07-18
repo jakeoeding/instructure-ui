@@ -35,7 +35,7 @@ embed: true
 
 There are a few steps you need to do before you start the migration process. **First, upgrade to the latest v7.x release to be able to follow this guide.**
 
-You can find the legacy v7 documentation on [legacy.instructure.design](https://legacy.instructure.design).
+You can find the legacy v7 documentation in the dropdown in the left sidebar.
 
 ### Removal of deprecated components and properties
 
@@ -82,7 +82,7 @@ Updated React legacy context to the new context API in the components that use i
 
 ##### TreeBrowser
 
-New `TreeBrowser.Node` component for rendering the `renderBeforeItems` and `renderAfterItems` in the `TreeBrowser` (Also available in 7.5.0).
+New `TreeBrowser.Node` component for rendering the `renderBeforeItems` and `renderAfterItems` in the `TreeBrowser` (Also available from 7.5.0).
 
 ##### Tabs
 
@@ -97,7 +97,7 @@ Visual fix: fixed the error of having no spacing between a single checkbox and i
 ##### Other
 
 - Upgraded Storybook from 5.2 to 6.1
-- New [legacy.instructure.design](https://legacy.instructure.design) for the documentation of the last major release (v7 in this case)
+- You can view the documentation from v6 with the dropdown in the left sidebar.
 - Updated some of our guides (e.g.: [Contributing](#contributing))
 - Development builds are called now `snapshot`
 - Improved a bit on the performance and speed of the [Iconography](#iconography) page

@@ -16,6 +16,6 @@ We recommend upgrading your application for each major version gradually, e.g. i
 
 The following deprecated components are removed in v9:
 
-- [ComponentIdentifier](#ComponentIdentifier): This component removed because it is not used by InstUI and other Instructure projects. If you need it, just copy&paste its code.
+- [ComponentIdentifier](#ComponentIdentifier), [DateTime](#DateTime): These components are removed because they are not used by InstUI and other Instructure projects. If you need it, just copy & paste their code.
 
 - InstUI-CLI's `create-app`, `create-component` and `create-package` commands: Just follow the instructions in the [usage](#usage) docs. Also the `template-component`, `template-app` and `template-app` packages are removed.

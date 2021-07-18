@@ -43,6 +43,30 @@ One of the changes of v8.0. is that we deleted all components and properties mar
 
 **We made a list of all the affected components and props on [Deprecated Properties and Components in Version 7.0](https://instructure.design/v7/#v7-deprecated-props-and-components) page to have a clear overview of the changes, removals, substitutes.** You can also find these changes in our [CHANGELOG](#CHANGELOG).
 
+### Configuration and build scripts are private
+
+These scripts are used for building and configuring InstUI, thus have frequent internal changes. If you depend on one of these packages we suggest to copy & paste their code to your project at the version you are currently using them:
+
+```
+cz-lerna-changelog
+eslint-plugin-instructure-ui
+instui-config
+pkg-utils
+ui-babel-preset
+ui-codemods
+ui-component-examples
+ui-eslint-config
+ui-icons-build
+ui-karma-config
+ui-polyfill-loader
+ui-scripts
+ui-stylelint-config
+ui-template-scripts
+ui-token-scripts
+ui-upgrade-scripts
+ui-webpack-config
+```
+
 ## Main changes
 
 ### Github as the main source code repository
@@ -70,6 +94,10 @@ We have removed the following packages:
 **Note:** In case you need them, the 7.x versions are still on npm, but they will not receive further feature updates.
 You can still file bugs, and we will likely fix them or submit pull requests if you want to see a new feature in them.
 
+### TypeScript
+
+InstUI has been converted to TypeScript. This will result in much better autocomplete for most cases, and you might see new errors when you are using something incorrectly (e.g. you set an enum to a non-permitted value)
+
 ### Other changes
 
 ##### Node version
@@ -79,10 +107,6 @@ InstUI now needs `node.js` version >12.20 to build.
 ##### Legacy Context
 
 Updated React legacy context to the new context API in the components that use it (e.g. `DrawerLayout`).
-
-##### TreeBrowser
-
-New `TreeBrowser.Node` component for rendering the `renderBeforeItems` and `renderAfterItems` in the `TreeBrowser` (Also available from 7.5.0).
 
 ##### Tabs
 
@@ -96,8 +120,6 @@ Visual fix: fixed the error of having no spacing between a single checkbox and i
 
 ##### Other
 
-- Upgraded Storybook from 5.2 to 6.1
 - You can view the documentation from v6 with the dropdown in the left sidebar.
 - Updated some of our guides (e.g.: [Contributing](#contributing))
 - Development builds are called now `snapshot`
-- Improved a bit on the performance and speed of the [Iconography](#iconography) page

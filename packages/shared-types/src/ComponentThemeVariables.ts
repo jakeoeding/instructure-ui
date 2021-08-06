@@ -40,23 +40,6 @@ import { Colors } from './Colors'
 
 type SpacingValue = string | 0
 
-export type AvatarTheme = {
-  background: Colors['backgroundLightest']
-  borderWidthSmall: Border['widthSmall']
-  borderWidthMedium: Border['widthMedium']
-  borderColor: Colors['borderMedium']
-  boxShadowColor: Colors['backgroundDarkest']
-  fontFamily: Typography['fontFamily']
-  fontWeight: Typography['fontWeightBold']
-  color: Colors['brand']
-  colorShamrock: Colors['shamrock']
-  colorBarney: Colors['barney']
-  colorCrimson: Colors['crimson']
-  colorFire: Colors['fire']
-  colorLicorice: Colors['licorice']
-  colorAsh: Colors['ash']
-}
-
 export type AlertTheme = {
   background: Colors['backgroundLightest']
   color: Colors['textDarkest']
@@ -83,6 +66,24 @@ export type AlertTheme = {
   boxShadow: Shadows['depth2']
 }
 
+export type AvatarTheme = {
+  background: Colors['backgroundLightest']
+  borderWidthSmall: Border['widthSmall']
+  borderWidthMedium: Border['widthMedium']
+  borderColor: Colors['borderMedium']
+  boxShadowColor: Colors['backgroundDarkest']
+  boxShadowBlur: string
+  fontFamily: Typography['fontFamily']
+  fontWeight: Typography['fontWeightBold']
+  color: Colors['brand']
+  colorShamrock: Colors['shamrock']
+  colorBarney: Colors['barney']
+  colorCrimson: Colors['crimson']
+  colorFire: Colors['fire']
+  colorLicorice: Colors['licorice']
+  colorAsh: Colors['ash']
+}
+
 export type BadgeTheme = {
   fontFamily: Typography['fontFamily']
   fontWeight: Typography['fontWeightNormal']
@@ -91,8 +92,12 @@ export type BadgeTheme = {
   colorDanger: Colors['textDanger']
   colorSuccess: Colors['textSuccess']
   colorPrimary: Colors['textBrand']
+  size: string
+  countOffset: string | 0
+  notificationOffset: string | 0
   notificationZIndex: Stacking['above']
   sizeNotification: Spacing['small']
+  borderRadius: string | 0
   padding: Spacing['xxSmall']
   pulseBorderThickness: Border['widthMedium']
 }
@@ -119,6 +124,7 @@ export type BillboardTheme = {
   clickableActiveBg: Colors['backgroundBrand']
   clickableActiveText: Colors['textLightest']
   buttonBorderStyle: Border['style']
+  buttonHoverBorderStyle: string
 }
 
 export type BreadcrumbTheme = {
